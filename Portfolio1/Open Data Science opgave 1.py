@@ -1,11 +1,8 @@
 import pandas as pd
-import os
-import re
-import matplotlib.pyplot as plt
 
 #Opgave 2
 
-data = pd.read_csv(r"C:\Users\Christoffer\Desktop\CSV DATA\titanic.csv", encoding="utf-8")
+data = pd.read_csv(r"C:\Users\Christoffer\.spyder-py3\Portfolio1\data\titanic.csv", encoding="utf-8")
 
 data_size = data.shape
 
@@ -64,8 +61,8 @@ for x in range(0, len(names)):
         lastnames.append(element[2])
 
 
+
 print("Are there more of one identical element in my list? : " + str(len(lastnames) != len(set(lastnames))))
-        
         
 #_________________________________________________________________
 
